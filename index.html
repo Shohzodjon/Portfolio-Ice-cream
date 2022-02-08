@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+  <header class="header">
+  
+    <nav class="navbar flex">
+      <div class="logo">
+        <img src="./Img/logo.svg" alt="logo">
+      </div>
+      <ul class="navbar--ul flex">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#testomonial">Testomonial</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="navbar--btn">
+        <button class="btn">
+          By Now
+        </button>
+      </div>
+     
+    </nav>
+
+
+    <div class="hero flex">
+
+      <div class="hero--text">
+        <h5>Sweet fun, full of milk.</h5>
+        <h1>Feel inside cold with <br> our  delicious <span> ice-cream.</span></h1>
+        <p>Some food has looked so awful that it's looked like something that the dog's brought home, yet after one
+          mouthful I've been left eating my thoughts, my words.</p>
+        <button class="btn buy--btn">
+          Buy Now
+        </button>
+      </div>
+      <!-- end of hero-text -->
+
+      <div class="hero--img">
+        <img src="./Img/Img7.svg" alt="ice">
+        <img src="./Img/cream.svg" alt="Cream">
+        <span class="circle"></span>
+      </div>
+
+    </div>
+
+
+  </header>
+  <!-- end of header -->
+  <section id="home">
+  
+    <div class="home--card flex">
+
+      <div class="card">
+        <img src="./Img/car2.svg" alt="car">
+        <h5>Free Shipping</h5>
+        <p>Last Chance! Free shipping on all orders ends today.</p>
+      </div>
+
+      <div class="card">
+        <img src="./Img/Cup.svg" alt="cup">
+        <h5>Quick Packaging</h5>
+        <p>Last Chance! Free shipping on all orders ends today.</p>
+      </div>
+
+      <div class="card">
+        <img src="./Img/cash-back 1.svg" alt="cash">
+        <h5>100% Money Back</h5>
+        <p>Last Chance! Free shipping on all orders ends today.</p>
+      </div>
+
+      <div class="card">
+        <img src="./Img/car.svg" alt="car">
+        <h5>Fast Delivery</h5>
+        <p>Last Chance! Free shipping on all orders ends today.</p>
+      </div>
+
+    </div>
+    <!-- end of   home--card   -->
+
+    <div class="home--box flex section--hide">
+
+      <div class="box--text animation">
+        <h2>Brown Sugar Oatmea</h2>
+        <p>Together with McDonald’s, Burger King has grown to become synonymous with burgers in the US.Together with
+          McDonald’s, Burger King has grown to become synonymous.</p>
+        <button class="btn buy--btn">
+          See Details
+        </button>
+      </div>
+
+      <div class="box--img">
+        <img src="./Img/Img2.svg" alt="img" class="img lazy--img">
+      </div>
+
+    </div>
+
+ 
+    
+  </section>
+  <!-- end of home -->
+
+  <section id="product">
+  
+    <div class="product--head card--animation">
+      <h2>Our Product</h2>
+      <ul class="product--nav flex">
+        <li><a href="#">ICE CREAM</a></li>
+        <li><a href="#">CAYENNE CHOCOLATE</a></li>
+        <li><a href="#">CAKE BATTER</a></li>
+        <li><a href="#">CANDY CANE</a></li>
+        <li><a href="#">PLATTERS</a></li>
+        <li><a href="#">DESSERT</a></li>
+      </ul>
+    </div>
+
+    <div class="grid grid--animation" id="testomonial">
+
+      <div class="item">
+        <img src="./Img/Img3.svg" alt="cream" class="img lazy--img">
+      </div>
+
+      <div class="item ice--cream__modal">
+        <h3>Brown bread</h3>
+        <p>Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+          scene.Bon Au Pain is a pioneer in the healthy fast food scene.</p>
+        <span class="price">$19.55</span><del>$22.55</del> <br>
+        <button class="btn buy--btn" data-btn="1">By Now</button>
+
+        <!-- modal -->
+
+        <div class="modal hidden modal--1" data-modal="1">
+          <div class="modal__flex">
+            <div class="modal--img">
+                <img src="./Img/Img3.svg" alt="rasm">
+            </div>
+            <div class="modal--info">
+              <h2>Brown bread</h2>
+              <span class="modal--price">$19.55</span>
+              <div class="modal--booking">
+                <input type="number" class="iceream--quantity  modal__quantity__content--1" value="0" required><br>
+                <input type="text" placeholder="Total sum" class="modal--total modal__total__content--1" max="3" readonly>
+                <button class="modal--btn btn" data-modalBtn="1">Buy Now</button>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid tempora fuga sapiente totam sed vero consequuntur quis inventore dolore.</p>
+            </div>
+          </div>
+        </div> 
+
+    <!-- end of modal -->
+
+      </div>
+
+      <div class="item ice--cream__modal" style="text-align: right;">
+        <h3>Cayenne chocolate</h3>
+        <p>Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+          scene.Bon Au Pain is a pioneer in the healthy fast food scene.</p>
+        <span class="price">$19.55</span><del>$22.55</del> <br>
+        <button class="btn buy--btn" data-btn="2">By Now</button>
+
+        <!-- modal begin -->
+        <div class="modal hidden modal--2" data-modal="2">
+          <div class="modal__flex">
+            <div class="modal--img">
+                <img src="./Img/Img4.svg" alt="rasm">
+            </div>
+            <div class="modal--info">
+              <h2>Brown bread</h2>
+              <span class="modal--price">$19.55</span>
+              <div class="modal--booking">
+                <input type="number" class="iceream--quantity modal__quantity__content--2" value="0" required><br>
+                <input type="text" placeholder="Total sum" class="modal--total modal__total__content--2" max="3" readonly>
+                <button class="modal--btn btn" data-modalBtn="2">Buy Now</button>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid tempora fuga sapiente totam sed vero consequuntur quis inventore dolore.</p>
+            </div>
+          </div>
+        </div> 
+
+         <!-- end of modal -->
+      </div>
+      <div class="item"> 
+        <img src="./Img/Img4.svg" alt="cream" class="img lazy--img">
+      </div>
+
+    
+    <div class="item">
+      <img src="./Img/Img5.svg" alt="cream" class="img lazy--img">
+    </div>
+
+
+      <div class="item ice--cream__modal">
+        <h3>Brown bread</h3>
+        <p>Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+          scene.Bon Au Pain is a pioneer in the healthy fast food scene.</p>
+        <span class="price">$19.55</span><del>$22.55</del><br>
+        <button class="btn buy--btn" data-btn="3">By Now</button>
+
+        <!-- begin modal -->
+        <div class="modal hidden modal--3">
+          <div class="modal__flex">
+            <div class="modal--img">
+                <img src="./Img/Img5.svg" alt="rasm">
+            </div>
+            <div class="modal--info">
+              <h2>Brown bread</h2>
+              <span class="modal--price">$19.55</span>
+              <div class="modal--booking">
+                <input type="number" class="iceream--quantity" value="0" required><br>
+                <input type="text" placeholder="Total sum" class="modal--total" max="3" readonly>
+                <button class="modal--btn btn">Buy Now</button>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid tempora fuga sapiente totam sed vero consequuntur quis inventore dolore.</p>
+            </div>
+          </div>
+        </div> 
+        <!-- end of modal -->
+      </div>
+
+      
+      <div class="item">
+    
+    <div class="slider--box">
+
+      <div class="slider--container">
+      <!-- first slide -->
+        <div class="slide" data-slide="1">
+          <div class="item--flex">
+            <div class="item--img"><img src="./Img/man.svg" alt="man"></div>
+            <div class="item--text">
+              <h3>Adele A. McNeill</h3>
+              <p>AMIRICAN</p>
+            </div>
+          </div>
+  
+          <p class="postion"><img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirmoq"> Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+            scene.Bon Au Pain is a pioneer in the healthy fast food scene. <img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirnoq"></p>
+        </div>
+
+   <!-- second slide -->
+   <div class="slide" data-slide="2">
+    <div class="item--flex">
+      <div class="item--img"><img src="./Img/girl.svg" alt="girl"></div>
+      <div class="item--text">
+        <h3>Adele A. McNeill</h3>
+        <p>AMIRICAN</p>
+      </div>
+    </div>
+
+    <p class="postion"><img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirmoq"> Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+      scene.Bon Au Pain is a pioneer in the healthy fast food scene. <img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirnoq"></p>
+  </div>
+
+<!-- third slide -->
+
+<div class="slide" data-slide="3">
+  <div class="item--flex">
+    <div class="item--img"><img src="./Img/girl.svg" alt="girl"></div>
+    <div class="item--text">
+      <h3>Adele A. McNeill</h3>
+      <p>AMIRICAN</p>
+    </div>
+  </div>
+
+  <p class="postion"><img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirmoq"> Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+    scene.Bon Au Pain is a pioneer in the healthy fast food scene. <img src="./Img/qoshtirnoqLeft.svg" alt="qoshtirnoq"></p>
+</div>
+
+    
+      </div>
+
+
+     
+        <ul>
+          <li><span class="left--btn">&leftarrow;</span></li>
+          <li><img src="./Img/man.svg" alt="man" data-img="1" class="slide--img"></li>
+          <li><img src="./Img/girl.svg" alt="gl" data-img="2" class="slide--img"></li>
+          <li><img src="./Img/girl.svg" alt="gil" data-img="3" class="slide--img"></li>
+          <li><span class="right--btn">&RightArrow;</span></li>
+        </ul>
+
+</div>
+      </div>
+
+      <div class="item">
+        <img src="./Img/Img6.svg" alt="cream" class="img lazy--img">
+      </div>
+
+    </div>
+ 
+    
+  </section>
+    <!-- end of product -->
+
+       <section id="contact">
+           
+
+           <div class="contact flex">
+
+             <div class="contact--img">
+               <img src="./Img/Img.svg" alt="img" class="img lazy--img">
+             </div>
+               
+              <div class="contact--text">
+                <h2>Simple Way To Order Your Food</h2>
+                <p>Some food has looked so awful that it's looked like something that the <br> dog's brought home, yet after one mouthful I've been left eating my thoughts.</p>
+
+                <span class="contact-icon"><img src="./Img/savat.svg" alt="savat">Select Your Food</span> <br>
+                <span class="contact-icon"><img src="./Img/savat1.svg" alt="savat">Add To Cart</span><br>
+                <span class="contact-icon"><img src="./Img/savat2.svg" alt="savat">Order Your Food</span><br>
+
+                <div class="contact-app">
+                  <img src="./Img/googlePlay.svg" alt="google">
+                  <img src="./Img/AppStore.svg" alt="app">
+                </div>
+              </div>
+
+              <!-- end of contact--text  -->
+           </div>
+
+     <div class="question">
+       <h2>Have Question in Mind? Let us help you</h2>
+      <div class="form">
+        <input type="text" placeholder="Enter your message">
+        <input type="submit" value="Send" class="btn form_btn">
+      </div>
+
+     </div>
+  
+           
+       </section>
+       <!-- end of contact -->
+
+       <footer class="footer">
+          <div class="footerBlock flex">
+
+            <ul class="footer-list">
+              <li><img src="./Img/logo.svg" alt="logo"></li>
+              <li>Some food has looked so awful that <br> it's looked like something that the <br> dog's brought home.</li>
+              <li>Fllow Us</li>
+              <li>
+                <ul class="social">
+                     <li><a href="#"><ion-icon name="logo-facebook" class="face"></ion-icon></a></li>
+                     <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                     <li><a href="#"><ion-icon name="logo-instagram" class="inst"></ion-icon></a></li>
+                     <li><a href="#"><ion-icon name="logo-linkedin" class="link"></ion-icon></a></li>
+                </ul>
+              </li>
+            </ul>
+
+               <ul class="footer-list" style="margin-top: 50px;">
+                 <li>Home</li>
+                 <li>Product</li>
+                 <li>Blog</li>
+                 <li>Pricing</li>
+                 <li>Testimonials</li>
+                 <li>Contact Us</li>
+               </ul>
+
+                 <ul class="footer-list" style="margin-top: 50px;">
+                   <li>Delivery Information</li>
+                   <li>Privacy Policy</li>
+                   <li>Terms & Condition</li>
+                   <li>Search Terms</li>
+                   <li>Order & Return</li>
+                   
+                 </ul>
+
+                 <ul class="footer-list" style="margin-top: 50px;">
+                   <li><b>Newsletter</b></li>
+                   <li> <span class="border"><input type="email" placeholder="Your Email"> <input type="submit" value="Subscribe" class="btn footer--btn"></span></li>
+                   <li>
+                     <ul class="typeOfpay">
+                         <li><img src="./Img/PayPal.svg" alt="paypal"></li>
+                         <li><img src="./Img/MasterCard.svg" alt="master"></li>
+                         <li><img src="./Img/visa.svg" alt="visa"></li>
+                     </ul>
+                   </li>
+                 </ul>
+
+          </div>
+       </footer>
+</div>
+<div class="container">
+ <!-- <div class="modal hidden">
+  <div class="modal__flex">
+    <div class="modal--img">
+        <img src="./Img/Img3.svg" alt="rasm">
+    </div>
+    <div class="modal--info">
+      <h2>Brown bread</h2>
+      <span class="modal--price">$19.55</span>
+      <div class="modal--booking">
+        <input type="number" class="iceream--quantity" value="1" required><br>
+        <input type="text" placeholder="Total sum" class="modal--total" max="3" readonly>
+        <button class="modal--btn btn">Buy Now</button>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid tempora fuga sapiente totam sed vero consequuntur quis inventore dolore.</p>
+    </div>
+  </div>
+</div>  -->
+</div>
+<div class="overlay hidden">
+</div>
+
+   
+    
+
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
