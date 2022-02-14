@@ -3,13 +3,21 @@ const modals = document.querySelectorAll(".modal");
 const overlay = document.querySelector(".overlay");
 const modalBtn = document.querySelector(".modal--btn");
 const gridListener = document.querySelector('.grid');
-// /#############  COUNT MODAL PRICE   ###########
 
-// const productPrices = document.querySelectorAll(".modal--price");
+
+const box = document.querySelector('.section--hide');
+const allImges = document.querySelectorAll(".img");
+const grid = document.querySelector('.grid--animation');
+const productCard = document.querySelector('.card--animation');
+
 const productQuantities = document.querySelectorAll(".iceream--quantity");
 const totalSums = document.querySelectorAll(".modal--total");
+const slider = document.querySelector('.slider--container');
 
-
+const rightBtn = document.querySelector('.right--btn');
+const leftBtn = document.querySelector('.left--btn');
+const allSlideImg = document.querySelectorAll('.slide--img');
+let counter = 0;
 
 
   gridListener.addEventListener('click', function(e){
@@ -25,29 +33,8 @@ const totalSums = document.querySelectorAll(".modal--total");
 
 
 
-
-
-// modalBtn.addEventListener("click", function () {
-//   overlay.classList.add('hidden');
-//   modal.classList.add('hidden');
-//   productQuantity.value = "";
-//   totalSum.value = "";
-// });
-
-// productQuantity.addEventListener("click", function () {
-//   const quantity = Number(productQuantity.value);
-//   if (quantity > 0) {
-//     totalSum.value = `${quantity * 19.55}$`;
-//   } else {
-//     totalSum.value = `${0}$`;
-//   }
-// });
-
-
 // ########### LAZY--IMGES #########
-const box = document.querySelector('.section--hide');
-const allImges = document.querySelectorAll(".img");
-const grid = document.querySelector('.grid--animation');
+
 
 function imgLoad(entries, observer) {
   const [entry] = entries;
@@ -100,7 +87,7 @@ let gridIntresecting = new IntersectionObserver(gridObserve, {
 
 gridIntresecting.observe(grid);
 
-const productCard = document.querySelector('.card--animation');
+
 
 const productFuntion = function(entries, observer){
     const [entry] = entries;
@@ -120,13 +107,9 @@ productCardObsever.observe(productCard);
 
 // \\\\\\\ Slider \\\\########
 
-const slider = document.querySelector('.slider--container');
 
-const rightBtn = document.querySelector('.right--btn');
-const leftBtn = document.querySelector('.left--btn');
-const allSlideImg = document.querySelectorAll('.slide--img');
 
-let counter = 0;
+
 
 function goToSlide(){
   if(counter > 2){
@@ -162,29 +145,5 @@ leftBtn.addEventListener('click', function(){
 
 
 
-class PersonCl {
-  constructor(name, year){
-    this.name= name;
-    this.year = year;
-  }
-  calcAge(){
-    console.log(23-this.year);
-  }
-}
 
-class StudentCl extends PersonCl {
-  constructor(name, year, course){
-    super(name, year);
-    this.course = course;
-  }
-  
-  introduce(){
-    console.log(`Hi my name is ${this.name} and I study ${this.course}`);
-  }
 
-}
-
-// let jack = new StudentCl('Jon Doe', 14, 'Software');
-// console.log(jack);
-// console.log(jack.calcAge());
-// console.log(jack.introduce());
